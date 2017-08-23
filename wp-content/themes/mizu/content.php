@@ -1,4 +1,5 @@
 <?php get_header();?>
+
 	  <div id="main">
 	    <div id="content">
 <?php if(have_posts()):while(have_posts()):the_post();?>
@@ -8,6 +9,8 @@
 		<p>
 		<?php echo get_the_date();?><?php echo get_the_time()?>|<?php the_category(',')?>
 		</p>
+			
+
 		<?php the_content();?>
 		<?php comments_template();?>
 	</h2>
